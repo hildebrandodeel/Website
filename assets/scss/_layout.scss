@@ -1,5 +1,5 @@
 /*
- * Custom translucent site header
+ * Custom Header
  */
 
 @mixin logo($default:32px) {
@@ -14,22 +14,19 @@
     .logo {
         @include logo();
     }
+    a {
+        color: #999;
+        transition: ease-in-out color .15s;
+    }
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
-.site-header a {
-    color: #999;
-    transition: ease-in-out color .15s;
+a.is-active {
+    color: white !important;
 }
-
-.site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
 
 
 /*
@@ -46,6 +43,7 @@
 
 .box-shadow {
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    max-height: 253px !important;
 }
 
 .flex-equal>* {

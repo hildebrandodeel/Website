@@ -8,7 +8,7 @@
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     .logo {
-        @include logo();
+        @include logo(128px);
     }
     a {
         color: #999;
